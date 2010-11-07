@@ -29,7 +29,7 @@ hint for the second field
 	// Mark the current element for highlighting
 	$(this).addClass('highlight');
 	// Add new element to display next to the input field
-	var $new = $('<span class="hightlightNote">'+hint+'</span>');
+	var $new = $('<span class="highlightNote">'+hint+'</span>');
 	$new.insertAfter($(this));
 	// When the input field changes, deactivate the helper
 	$(this).blur(function () {
