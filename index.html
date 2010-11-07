@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<script type="text/javascript" src="jquery-1.4.3.js"></script>
+<script type="text/javascript" src="formhelper.js"></script>
+
+<style>
+
+.highlight {
+  background-color: #F44;
+}
+.highlightNote {
+  float: right;
+  padding: 10px;
+  background-color: #F00;
+}
+
+</style></head>
+
+<body>
+
+<p>Demo of formhelper jQuery Plugin</p>
+
+Plugin Name: <input type="text" id="plugin_name" /><br>
+
+Plugin Author: <input type="text" id="plugin_author" />
+
+<script type="text/javascript">
+$(document).ready(function (){
+$.fn.formhelper([{ field: 'plugin_name', hint : 'Fill in the name of the Plugin you are interested in', delay : 1000},
+                 { field: 'plugin_author', hint : 'Search for all plugins of the given author', delay : 2000}]);
+});
+</script>
+</body></html>
